@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Uniqloooo by FCU</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		
+    </head>
+    <style>
+        
+        .container{
+
+            margin:0%;
+            align:center;
+        }
+        .card{
+        /* 設定父親定位點 */
+            position: relative;
+            width:50%;
+            height: 100%;
+            float:left;
+        }
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .info{
+        /*   display: none; */
+            opacity: 0;
+            position: absolute;
+            box-sizing: border-box;
+            background-color: rgba(0,0,0,.3);
+            top: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: 200%;
+            padding-top: 40%;
+        }
+        .info p{
+            color: #fff;
+        }
+        .info:hover{
+            -webkit-transition: 500ms;
+            opacity: 1;
+        }
+        .button_register{
+            width: 20%;
+            height: 15%;
+        }
+</style>
+    <body >
+        <div class="container">
+            <div class="card">
+                <img src="images\icon.png" alt=""> 
+            <div class="info">
+                <button class="button_register" onclick='location.href="registerforshop.php"'>註冊</button>
+                <p>店家會員</p>
+            </div>
+            </div>
+            
+            <div class="card">
+                <img src="images\images.png" alt="">
+            <div class="info">
+                <button class="button_register" onclick='location.href="registerforcustomer.php"'>註冊</button>
+                <p>一般會員</p>
+            </div>
+            </div>
+            
+
+        </div>
+    </body>
+</html>
